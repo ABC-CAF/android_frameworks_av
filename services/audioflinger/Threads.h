@@ -510,8 +510,8 @@ public:
     static const int8_t kMaxTrackRetriesOffload = 20;
     static const int8_t kMaxTrackStartupRetriesOffload = 100;
     static const int8_t kMaxTrackStopRetriesOffload = 2;
-    // 16 tracks max per client allows for 2 misbehaving application leaving 6 available tracks.
-    static const uint32_t kMaxTracksPerUid = 16;
+    // 18 tracks max per client allows for 2 misbehaving application leaving 8 available tracks.
+    static const uint32_t kMaxTracksPerUid = 18;
 
     PlaybackThread(const sp<AudioFlinger>& audioFlinger, AudioStreamOut* output,
                    audio_io_handle_t id, audio_devices_t device, type_t type, bool systemReady);
